@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CherishConnect - Your Birthday Buddy!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <h1>🎁 Cherished Reminders 🎁</h1>
+        <nav>
+            <ul>
+                <li><a href="#calendar-section">Calendar</a></li>
+                <li><a href="#memories-section">Memories</a></li>
+                <li><a href="#settings-section">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calendar-section" class="container">
+            <h2>Your Birthday Calendar</h2>
+            <div class="calendar-nav">
+                <button id="prevMonth">&lt; Previous</button>
+                <h3 id="currentMonthYear"></h3>
+                <button id="nextMonth">Next &gt;</button>
+            </div>
+            <div class="calendar-grid">
+                <div class="day-name">Sun</div>
+                <div class="day-name">Mon</div>
+                <div class="day-name">Tue</div>
+                <div class="day-name">Wed</div>
+                <div class="day-name">Thu</div>
+                <div class="day-name">Fri</div>
+                <div class="day-name">Sat</div>
+                </div>
+            <div id="birthday-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h3>Add/Edit Birthday</h3>
+                    <form id="birthday-form">
+                        <label for="birthday-name">Name:</label>
+                        <input type="text" id="birthday-name" required>
+                        <label for="birthday-date-display">Date:</label>
+                        <input type="text" id="birthday-date-display" readonly>
+                        <input type="hidden" id="birthday-date-hidden">
+
+                        <label for="birthday-picture">Picture:</label>
+                        <input type="file" id="birthday-picture" accept="image/*">
+                        <div id="picture-preview"></div>
+
+                        <label for="birthday-quote">Quote:</label>
+                        <textarea id="birthday-quote" placeholder="A special message or quote..."></textarea>
+
+                        <div class="sticker-palette">
+                            <h4>Add a Sticker/Emoji:</h4>
+                            <span class="sticker" data-emoji="🎂">🎂</span>
+                            <span class="sticker" data-emoji="🥳">🥳</span>
+                            <span class="sticker" data-emoji="🎁">🎁</span>
+                            </div>
+
+                        <button type="submit">Save Birthday</button>
+                        <button type="button" id="deleteBirthday" class="delete-button" style="display: none;">Delete Birthday</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="memories-section" class="container">
+            <h2>Special Memories Diary</h2>
+            <button id="addMemoryButton">+ Add New Memory</button>
+            <div id="memory-list">
+                </div>
+            <div id="memory-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h3>Add/Edit Memory</h3>
+                    <form id="memory-form">
+                        <label for="memory-title">Title:</label>
+                        <input type="text" id="memory-title" required>
+                        <label for="memory-date">Date:</label>
+                        <input type="date" id="memory-date" required>
+                        <label for="memory-content">Details:</label>
+                        <textarea id="memory-content" rows="5" required></textarea>
+                        <label for="memory-picture">Picture (Optional):</label>
+                        <input type="file" id="memory-picture" accept="image/*">
+                        <div id="memory-picture-preview"></div>
+                        <button type="submit">Save Memory</button>
+                        <button type="button" id="deleteMemory" class="delete-button" style="display: none;">Delete Memory</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="settings-section" class="container">
+            <h2>Settings</h2>
+            <div class="setting-item">
+                <label for="notification-toggle">Enable Birthday Notifications:</label>
+                <input type="checkbox" id="notification-toggle" checked>
+            </div>
+            <div class="setting-item">
+                <label for="notification-time">Notify at:</label>
+                <input type="time" id="notification-time" value="09:00">
+            </div>
+            <p class="settings-note">Notifications will appear one day before the birthday.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Thank you for choosing Cherished Reminders! ❤️ <br>
+            May your days be filled with joy and connection.✨
+        </p>
+        <p>&copy; 2025 Cherished Reminders. All rights reserved.</p>
+        <p>Developed as a learning project by Monisha Aradhya CM.</p>
+        <p>Contact: monishaaradhyacm@gmail.com</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
