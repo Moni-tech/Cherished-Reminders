@@ -27,7 +27,7 @@ My goal is to foster deeper connections by simplifying the act of remembering an
 <br>
 
 **Memories Diary:**
-![Screenshot of Cherished Reminders memories page](images/add-memories.png)
+![Screenshot of Cherished Reminders memories page](images/add-memory.png)
 
 
 ---
