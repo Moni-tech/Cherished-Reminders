@@ -90,7 +90,7 @@ If you'd like to explore the codebase, contribute, or run the application on you
 
 This project was passionately designed and developed by **Monisha Aradhya CM** as a hands-on learning exercise to master web development fundamentals (HTML, CSS, and JavaScript).
 
-* **Contact:** monishaaradhyacm@gmail.com 
+* **Contact:** monitech.projects@gmail.com 
 * **GitHub Profile:** https://github.com/moni-tech
 * **LinkedIn Profile:** : https://lnk.ink/monishaaradhyacm
 
