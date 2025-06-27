@@ -19,7 +19,7 @@ My goal is to foster deeper connections by simplifying the act of remembering an
 ## 📸 Sneak Peek
 
 **Main Calendar View:**
-![Cherished Reminders Main Calendar Page Screenshot](images/calendar.png)
+![Cherished Reminders Main Calendar Page Screenshot](images/calender.png)
 
 <br> **Adding a New Birthday:**
 ![Screenshot of Cherished Reminders add birthday modal](images/add-birthday.png)
